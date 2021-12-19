@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseDetail"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="9"
+    >
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:src="@drawable/courseandroid"
+    android:layout_weight="4"
+    ></ImageView>
+
+    <TextView
+        android:id="@+id/courseDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Hello World"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25dp">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author :   "
+            android:layout_gravity="center_vertical"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arbaaz Shaikh"
+            android:id="@+id/courseDetailAuthor"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"></TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tags :      "
+            android:layout_gravity="center_vertical"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:id="@+id/courseDetailTags"
+            android:layout_gravity="center_vertical"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details :  "
+            android:layout_gravity="top
+"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amazing Course, Learn this and that. Helpful fpt beginners. Enroll and complete the course to achieve a badge."
+            android:textColor="@color/black"
+
+            android:id="@+id/courseDetailDesc"
+            android:layout_gravity="top"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enrolled : "
+            android:layout_gravity="top"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:textColor="@color/black"
+            android:layout_gravity="top"></TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEnroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:text="Enroll"
+        android:textStyle="bold"
+        android:elevation="5dp"
+        android:layout_gravity="bottom"
+        android:textColor="@color/blue_dark"
+        ></Button>
+
+    <Button
+        android:id="@+id/btnGotoContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_dark"
+        android:text="Go to Course"
+        android:textStyle="bold"
+        android:elevation="5dp"
+        android:layout_gravity="bottom"
+        android:textColor="@color/orange"
+        android:visibility="gone"
+        ></Button>
+
+
+</LinearLayout>

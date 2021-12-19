@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <VideoView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contentVideo"></VideoView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAnimate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="5dp"
+        >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:id="@+id/textVideoName"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:lineHeight="25dp"
+            android:text="Description Here"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/hiddenLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description : "
+            android:textColor="@color/black"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/textVideoDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description Here........"></TextView>
+    </LinearLayout>
+
+</LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnDropDown"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:layout_weight="2"
+            android:src="@drawable/down">
+
+        </ImageView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
